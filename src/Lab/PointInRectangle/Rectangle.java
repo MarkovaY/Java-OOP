@@ -10,13 +10,6 @@ public class Rectangle {
         this.topRight = topRight;
     }
 
-    public boolean contains(Point point) {
-        boolean isInX = point.getX() >= bottomLeft.getX() && point.getX() <= topRight.getX();
-        boolean isInY = point.getY() >= bottomLeft.getY() && point.getY() <= topRight.getY();
-
-        return isInX && isInY;
-    }
-
     public Point getBottomLeft() {
         return bottomLeft;
     }
@@ -31,5 +24,12 @@ public class Rectangle {
 
     public void setTopRight(Point topRight) {
         this.topRight = topRight;
+    }
+
+    public boolean contains(Point point) {
+        boolean isInX = point.getX() >= bottomLeft.getX() && point.getX() <= topRight.getX();
+        boolean isInY = point.getY() >= bottomLeft.getY() && point.getY() <= topRight.getY();
+
+        return isInX && isInY;
     }
 }

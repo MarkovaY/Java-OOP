@@ -10,10 +10,6 @@ public class StudentSystem {
         this.repo = new HashMap<>();
     }
 
-    public Map<String, Student> getRepo() {
-        return this.repo;
-    }
-
     public void parseCommand(String[] input) {
 
         String argument = input[0];

@@ -15,6 +15,7 @@ public class Main {
         DiscountType discountType = DiscountType.valueOf(input[3]);
 
 
+        //Printing the result
         double holidayPrice = PriceCalculator.calculateTotalPrice(pricePerDay, numberOfDays, season, discountType);
         System.out.printf("%.2f", holidayPrice);
     }

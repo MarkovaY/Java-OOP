@@ -1,4 +1,4 @@
-package Lab.PointInRectangle;
+package Lab.WorkingWithAbstraction.PointInRectangle;
 
 public class Point {
     private int x;

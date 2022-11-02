@@ -19,6 +19,10 @@ public class Person {
         this.setSalary(salary + (salary * bonusReduced));
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public double getSalary() {
         return salary;
     }

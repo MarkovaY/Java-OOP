@@ -1,4 +1,4 @@
-package Lab.Inheritance.MultipleInheritance;
+package Lab.Inheritance.IncreasingHierarchy;
 
 public class Main {
     public static void main(String[] args) {

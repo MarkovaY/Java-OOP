@@ -1,4 +1,4 @@
-package Lab.Inheritance.MultipleInheritance;
+package Lab.Inheritance.IncreasingHierarchy;
 
 public class Dog extends Animal {
     public void bark (){

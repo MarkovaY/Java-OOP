@@ -1,4 +1,4 @@
-package Lab.Inheritance.MultipleInheritance;
+package Lab.Inheritance.IncreasingHierarchy;
 
 
 public class Puppy extends Dog {

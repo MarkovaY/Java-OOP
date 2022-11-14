@@ -8,6 +8,6 @@ public class Chinese extends BasePerson {
 
     @Override
     public String sayHello() {
-        return "Djydjybydjy";
+        return "Ni hao";
     }
 }

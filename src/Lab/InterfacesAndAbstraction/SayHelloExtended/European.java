@@ -1,6 +1,6 @@
 package Lab.InterfacesAndAbstraction.SayHelloExtended;
 
-public class European extends BasePerson implements Person {
+public class European extends BasePerson {
 
     protected European(String name) {
         super(name);

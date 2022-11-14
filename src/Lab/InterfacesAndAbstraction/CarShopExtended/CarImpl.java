@@ -1,6 +1,6 @@
 package Lab.InterfacesAndAbstraction.CarShopExtended;
 
-public class CarImpl implements Car{
+public abstract class CarImpl implements Car{
     private String model;
     private String color;
     private Integer horsePower;

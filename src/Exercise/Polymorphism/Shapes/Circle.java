@@ -1,6 +1,6 @@
 package Exercise.Polymorphism.Shapes;
 
-public class Circle extends Shape {
+public class Circle implements Shape {
 
     private Double radius;
 

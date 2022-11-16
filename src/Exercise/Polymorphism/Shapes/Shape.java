@@ -1,11 +1,10 @@
 package Exercise.Polymorphism.Shapes;
 
-public abstract class Shape {
-    private Double perimeter;
-    private Double area;
+public interface Shape {
+    // According to the assignment condition, this has to be an abstract class with private fields, but since they're not needed, and it only has two abstract methods, I changed it to interface
 
-    public abstract Double calculatePerimeter();
+    Double calculatePerimeter();
 
-    public abstract Double calculateArea();
+    Double calculateArea();
 
 }

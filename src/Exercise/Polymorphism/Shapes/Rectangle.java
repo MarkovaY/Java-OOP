@@ -1,6 +1,6 @@
 package Exercise.Polymorphism.Shapes;
 
-public class Rectangle extends Shape {
+public class Rectangle implements Shape {
 
     private Double height;
     private Double width;

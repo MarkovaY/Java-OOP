@@ -1,4 +1,4 @@
-package Exercise.Polymorphism.Animals;
+package Lab.Polymorphism.Animals;
 
 public class Cat extends Animal {
 

@@ -1,4 +1,4 @@
-package Exercise.Polymorphism.Animals;
+package Lab.Polymorphism.Animals;
 
 public class Dog extends Animal {
     public Dog(String name, String favouriteFood) {

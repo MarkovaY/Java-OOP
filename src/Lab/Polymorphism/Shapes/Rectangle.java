@@ -1,4 +1,4 @@
-package Exercise.Polymorphism.Shapes;
+package Lab.Polymorphism.Shapes;
 
 public class Rectangle implements Shape {
 

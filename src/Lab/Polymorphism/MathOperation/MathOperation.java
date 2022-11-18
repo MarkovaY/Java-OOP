@@ -1,4 +1,4 @@
-package Exercise.Polymorphism.MathOperation;
+package Lab.Polymorphism.MathOperation;
 
 public class MathOperation {
 

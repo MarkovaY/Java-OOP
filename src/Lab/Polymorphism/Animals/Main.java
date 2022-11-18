@@ -1,4 +1,4 @@
-package Exercise.Polymorphism.Animals;
+package Lab.Polymorphism.Animals;
 
 public class Main {
     public static void main(String[] args) {

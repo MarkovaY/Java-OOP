@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        StudentSystem studentSystem = new StudentSystem();
+        Lab.WorkingWithAbstraction.StudentSystem.StudentSystem studentSystem = new Lab.WorkingWithAbstraction.StudentSystem.StudentSystem();
 
         String[] input = readLine(scanner);
 

@@ -1,6 +1,6 @@
 package Lab.Polymorphism.Shapes;
 
-public class Rectangle implements Shape {
+public class Rectangle implements Lab.Polymorphism.Shapes.Shape {
 
     private Double height;
     private Double width;

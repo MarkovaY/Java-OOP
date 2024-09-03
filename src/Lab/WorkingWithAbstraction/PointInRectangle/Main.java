@@ -15,10 +15,10 @@ public class Main {
         int topRightX = coordinates[2];
         int topRightY = coordinates[3];
 
-        Point bottomLeft = new Point(bottomLeftX, bottomLeftY); // creating bottom left point of the rectangle
-        Point topRight = new Point(topRightX, topRightY);       // creating top right point of the rectangle
+        Lab.WorkingWithAbstraction.PointInRectangle.Point bottomLeft = new Lab.WorkingWithAbstraction.PointInRectangle.Point(bottomLeftX, bottomLeftY); // creating bottom left point of the rectangle
+        Lab.WorkingWithAbstraction.PointInRectangle.Point topRight = new Lab.WorkingWithAbstraction.PointInRectangle.Point(topRightX, topRightY);       // creating top right point of the rectangle
 
-        Rectangle rectangle = new Rectangle(bottomLeft, topRight); // creating the rectangle
+        Lab.WorkingWithAbstraction.PointInRectangle.Rectangle rectangle = new Lab.WorkingWithAbstraction.PointInRectangle.Rectangle(bottomLeft, topRight); // creating the rectangle
 
         // Reading the number of points I will receive from the scanner
         int n = Integer.parseInt(scanner.nextLine());
@@ -29,7 +29,7 @@ public class Main {
             int x = coordinatesOfPoints[0];
             int y = coordinatesOfPoints[1];
             //Creating a point from the given coordinates
-            Point pointInQuestion = new Point(x, y);
+            Lab.WorkingWithAbstraction.PointInRectangle.Point pointInQuestion = new Lab.WorkingWithAbstraction.PointInRectangle.Point(x, y);
             // Print whether the point is in the initial rectangular, by using the contains method
             System.out.println(rectangle.contains(pointInQuestion));
         }

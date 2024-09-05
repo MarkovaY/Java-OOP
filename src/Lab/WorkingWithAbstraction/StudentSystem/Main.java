@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         Lab.WorkingWithAbstraction.StudentSystem.StudentSystem studentSystem = new Lab.WorkingWithAbstraction.StudentSystem.StudentSystem();

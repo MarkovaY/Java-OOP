@@ -6,6 +6,7 @@ public class PriceCalculator {
 
         // Calculating the price without discount
         double totalPrice = pricePerDay * numberOfDays * season.getMultiplier();
+
         // Adding the discount, if any
         totalPrice = totalPrice - (totalPrice * (discountType.getPercent() / 100));
 

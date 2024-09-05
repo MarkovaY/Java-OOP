@@ -1,6 +1,7 @@
 package Lab.WorkingWithAbstraction.HotelReservation;
 
 public enum DiscountType {
+
     VIP("VIP", 20),
     SecondVisit("SecondVisit", 10),
     None("None", 0);

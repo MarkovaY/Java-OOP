@@ -1,6 +1,7 @@
 package Lab.WorkingWithAbstraction.HotelReservation;
 
 public enum Season {
+
     Autumn("Autumn", 1),
     Spring("Spring", 2),
     Winter("Winter", 3),

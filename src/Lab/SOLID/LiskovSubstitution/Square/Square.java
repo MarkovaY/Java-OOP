@@ -1,28 +1,24 @@
 package Lab.SOLID.LiskovSubstitution.Square;
 
-public class Square extends Rectangle {
+public class Square extends Shape {
 
-    public Square(double side) {
-        super(side, side);
+    private double side;
+
+    public Square(int side) {
+        this.side = side;
+    }
+
+    public double getSide() {
+        return side;
+    }
+
+    public Square setSide(double side) {
+        this.side = side;
+        return this;
     }
 
     @Override
-    public double getWidth() {
-        return super.getWidth();
-    }
-
-    @Override
-    public void setWidth(double width) {
-        super.setWidth(width);
-    }
-
-    @Override
-    public double getHeight() {
-        return super.getHeight();
-    }
-
-    @Override
-    public void setHeight(double height) {
-        super.setHeight(height);
+    public double getArea() {
+        return this.side * this.side;
     }
 }

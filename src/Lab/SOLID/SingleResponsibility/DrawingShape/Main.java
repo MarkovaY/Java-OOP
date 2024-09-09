@@ -1,4 +1,4 @@
-package Lab.SOLID.DrawingShape;
+package Lab.SOLID.SingleResponsibility.DrawingShape;
 
 public class Main {
     public static void main(String[] args) {

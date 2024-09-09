@@ -1,4 +1,4 @@
-package Lab.SOLID.DrawingShape.Interfaces;
+package Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces;
 
 public interface Rengerer {
     void render(DrawingRepository drawingRepository, Shape shape);

@@ -1,10 +1,10 @@
-package Lab.SOLID.DrawingShape;
+package Lab.SOLID.SingleResponsibility.DrawingShape;
 
 
-import Lab.SOLID.DrawingShape.Interfaces.DrawingManager;
-import Lab.SOLID.DrawingShape.Interfaces.DrawingRepository;
-import Lab.SOLID.DrawingShape.Interfaces.Rengerer;
-import Lab.SOLID.DrawingShape.Interfaces.Shape;
+import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.DrawingManager;
+import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.DrawingRepository;
+import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.Rengerer;
+import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.Shape;
 
 public class DrawingManagerImpl implements DrawingManager {
 

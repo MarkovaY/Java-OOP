@@ -1,5 +1,5 @@
 package Lab.SOLID.LiskovSubstitution.Square;
 
-public abstract class Shape {
+public interface Shape {
     public abstract double getArea();
 }

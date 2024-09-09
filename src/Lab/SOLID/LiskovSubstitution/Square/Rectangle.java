@@ -1,6 +1,6 @@
 package Lab.SOLID.LiskovSubstitution.Square;
 
-public class Rectangle extends Shape {
+public class Rectangle implements Shape {
    private double width;
 
    private double height;

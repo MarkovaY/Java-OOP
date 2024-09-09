@@ -1,8 +1,8 @@
 package Lab.SOLID.OpenClosedPrinciple.DrawingShape;
 
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.DrawingManager;
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Shape;
 
+import Lab.SOLID.OpenClosedPrinciple.DrawingShape.Interfaces.DrawingManager;
+import Lab.SOLID.OpenClosedPrinciple.DrawingShape.Interfaces.Shape;
 
 public class DrawingManagerImpl implements DrawingManager {
 

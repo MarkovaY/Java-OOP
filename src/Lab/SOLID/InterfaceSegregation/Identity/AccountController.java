@@ -1,6 +1,7 @@
 package Lab.SOLID.InterfaceSegregation.Identity;
 
-import solidLab.p04_InterfaceSegregation.p02_identity.interfaces.Account;
+
+import Lab.SOLID.InterfaceSegregation.Identity.Interfaces.Account;
 
 public class AccountController {
     private final Account manager;

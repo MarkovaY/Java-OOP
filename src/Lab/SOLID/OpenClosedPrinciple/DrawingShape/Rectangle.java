@@ -1,6 +1,7 @@
 package Lab.SOLID.OpenClosedPrinciple.DrawingShape;
 
-import solidLab.p02_OpenClosedPrinciple.p02_DrawingShape.interfaces.Shape;
+
+import Lab.SOLID.OpenClosedPrinciple.DrawingShape.Interfaces.Shape;
 
 public class Rectangle implements Shape {
 

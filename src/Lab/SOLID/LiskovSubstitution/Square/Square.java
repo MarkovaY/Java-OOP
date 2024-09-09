@@ -2,6 +2,10 @@ package Lab.SOLID.LiskovSubstitution.Square;
 
 public class Square extends Rectangle {
 
+    public Square(double side) {
+        super(side, side);
+    }
+
     @Override
     public double getWidth() {
         return super.getWidth();

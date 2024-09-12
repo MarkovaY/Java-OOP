@@ -1,6 +1,7 @@
 package Lab.SOLID.LiskovSubstitution.Square;
 
 public class Rectangle implements Shape {
+
    private double width;
 
    private double height;
@@ -28,6 +29,6 @@ public class Rectangle implements Shape {
 
     @Override
     public double getArea() {
-       return this.width*this.height;
+       return this.width * this.height;
     }
 }

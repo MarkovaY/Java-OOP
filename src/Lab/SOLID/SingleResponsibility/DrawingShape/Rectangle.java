@@ -1,7 +1,5 @@
 package Lab.SOLID.SingleResponsibility.DrawingShape;
 
-import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.DrawingRepository;
-import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.Rengerer;
 import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.Shape;
 
 public class Rectangle implements Shape {
@@ -29,13 +27,9 @@ public class Rectangle implements Shape {
         this.height = height;
     }
 
-    public double getArea() {
-       return this.height*this.width;
-    }
-
     @Override
-    public void draw(Rengerer rengerer, DrawingRepository drawingRepository) {
-        rengerer.render(drawingRepository,this);
-
+    public double getArea() {
+       return this.height * this.width;
     }
+
 }

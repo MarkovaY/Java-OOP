@@ -1,6 +1,18 @@
 package Lab.SOLID.OpenClosedPrinciple.DrawingShape;
 
-import Lab.SOLID.OpenClosedPrinciple.DrawingShape.Interfaces.Shape;
+
+import Lab.SOLID.SingleResponsibility.DrawingShape.Interfaces.Shape;
 
 public class Circle implements Shape {
+
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
 }

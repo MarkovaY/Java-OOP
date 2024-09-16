@@ -2,8 +2,10 @@ package Lab.SOLID.DependencyInversion.Worker;
 
 public class Manager {
 
-    public Manager() {
-        Worker worker = new Worker();
-        worker.work();
+    private Worker worker;
+
+    public Manager(Worker worker) {
+        this.worker = worker;
+        this.worker.work();
     }
 }

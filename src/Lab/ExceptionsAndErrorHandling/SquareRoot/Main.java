@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
 //        Write a program that reads an integer number and calculates and prints its square root (with 2 digits after the decimal point).
-//        If the number is invalid, print "Invalid number".
-//        In all cases finally, print "Goodbye". Use try-catch-finally.
+
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -17,8 +17,10 @@ public class Main {
             double result = sqrt(input);
             System.out.printf("%.2f%n", result);
         } catch(IllegalArgumentException ignored){
+//        If the number is invalid, print "Invalid number".
             System.out.println("Invalid number");
         } finally {
+//        In all cases finally, print "Goodbye". Use try-catch-finally.
             System.out.println("Goodbye");
         }
 

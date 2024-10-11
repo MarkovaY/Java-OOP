@@ -3,15 +3,16 @@ package Lab.ExceptionsAndErrorHandling.EnterNumbers;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
 
-//        Write a method readNumber(int start, int end) that enters an integer number in a given range (start…end), excluding the numbers start and end.
-//        If an invalid number or a non-number text is entered, the method should throw an exception.
-//        Using this method, write a program that enters 10 numbers: a1, a2, … a10, such that 1 < a1 < … < a10 < 100.
-//        If the user enters an invalid number, continue while there are 10 valid numbers entered.
-//        Print the array elements, separated with comma and space ", ".
+//  Write a method readNumber(int start, int end) that enters an integer number in a given range (start…end), excluding the numbers start and end.
+//  If an invalid number or a non-number text is entered, the method should throw an exception.
+//  Using this method, write a program that enters 10 numbers: a1, a2, … a10, such that 1 < a1 < … < a10 < 100.
+//  If the user enters an invalid number, continue while there are 10 valid numbers entered.
+//  Print the array elements, separated with comma and space ", ".
 
         Scanner scanner = new Scanner(System.in);
 
@@ -24,12 +25,18 @@ public class Main {
 
             try{
                 start = readNumber(start, end, scanner);
+                numbersInRange.add(start);
             } catch(NumberFormatException ignored){
-                System.out.println();
+//  When the entered input holds a non-integer value, print "Invalid Number!".
+                System.out.println("Invalid Number!");
+            } catch(IllegalStateException e){
+                System.out.println(e.getMessage());
             }
-
-            numbersInRange.add(start);
         }
+
+        System.out.println(numbersInRange.stream()
+                .map(String::valueOf)
+                .collect(Collectors.joining(", ")));
 
     }
 
@@ -38,8 +45,8 @@ public class Main {
         int number = Integer.parseInt(scanner.nextLine());
 
         if(!(start < number && number < end)){
-//          When the entered input holds an integer that is out of range, print "Your number is not in range {currentNumber} - 100!".
-            throw new IllegalStateException("Your number is not in range" + start + " - 100!");
+//  When the entered input holds an integer that is out of range, print "Your number is not in range ({currentNumber} - 100)!".
+            throw new IllegalStateException("Your number is not in range (" + start + " - 100)!");
         }
 
         return number;

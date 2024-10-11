@@ -45,8 +45,8 @@ public class Main {
         int number = Integer.parseInt(scanner.nextLine());
 
         if(!(start < number && number < end)){
-//  When the entered input holds an integer that is out of range, print "Your number is not in range ({currentNumber} - 100)!".
-            throw new IllegalStateException("Your number is not in range (" + start + " - 100)!");
+//  When the entered input holds an integer that is out of range, print "Your number is not in range {currentNumber} - 100!".
+            throw new IllegalStateException("Your number is not in range " + start + " - 100!");
         }
 
         return number;
